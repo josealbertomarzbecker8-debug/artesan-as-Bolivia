@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ARTESANÍAS BOLIVIA | Llaveros Artesanales de Lagartijas – Santa Cruz</title>
+  <meta name="description" content="Llaveros artesanales con forma de lagartijas hechos a mano en Santa Cruz de la Sierra, Bolivia. Piezas únicas para tus llaves o para regalar. Pide directo por WhatsApp al 78914551." />
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            arena: {
+              50: '#FAF8F5',
+              100: '#F3EFE8',
+              200: '#E6DEC8',
+              300: '#D4C5A3',
+            },
+            selva: {
+              600: '#2D5A27',
+              700: '#23471E',
+              800: '#1A3616',
+              900: '#12260F',
+            },
+            terracota: {
+              500: '#B85D3B',
+              600: '#9E4B2D',
+            },
+            whatsapp: {
+              500: '#25D366',
+              600: '#1EBE5D',
+              700: '#179E4B',
+            }
+          },
+          boxShadow: {
+            'soft': '0 10px 30px -10px rgba(26, 54, 22, 0.08)',
+            'card': '0 4px 20px -2px rgba(0, 0, 0, 0.05)',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Ajustes finos de accesibilidad y microinteracciones */
+    body {
+      background-color: #FAF8F5;
+      color: #1F2937;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-6px) rotate(1.5deg); }
+    }
+    .animate-float-slow {
+      animation: floatSlow 4.5s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased selection:bg-selva-600 selection:text-white">
+
+  <!-- ===================================================================== -->
+  <!-- NOTIFICACIÓN TOAST (Reemplazo seguro y moderno de alert())            -->
+  <!-- ===================================================================== -->
+  <div id="toast-container" class="fixed top-20 right-4 z-50 flex flex-col gap-2 pointer-events-none max-w-xs w-full"></div>
+
+  <!-- ===================================================================== -->
+  <!-- BARRA SUPERIOR DE CONFIANZA LOCAL                                     -->
+  <!-- ===================================================================== -->
+  <div class="bg-selva-800 text-arena-50 text-xs py-2 px-4 text-center font-medium tracking-wide">
+    <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
+      <span class="inline-flex items-center gap-1.5">
+        <span class="w-2 h-2 rounded-full bg-whatsapp-500 animate-pulse"></span>
+        Taller Artesanal en Santa Cruz de la Sierra, Bolivia
+      </span>
+      <span class="hidden sm:inline text-arena-300">•</span>
+      <span>Pagos fáciles con <strong>QR Simple</strong> y envíos a todo el país</span>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- STICKY HEADER (Navegación clara + Acceso rápido a WhatsApp y Pedido)  -->
+  <!-- ===================================================================== -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-arena-200 transition-all">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between gap-3">
+      
+      <!-- Identidad de Marca -->
+      <a href="#inicio" class="flex items-center gap-2.5 group focus:outline-none">
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-selva-700 flex items-center justify-center text-white shadow-sm group-hover:bg-selva-600 transition-colors shrink-0">
+          <!-- Emblema SVG Lagartija Artesanal -->
+          <svg class="w-6 h-6" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M18 5C19.8 5 21 6.6 21 8.5C21 9.8 20.2 11 19.3 11.7C20.5 13.5 21 15.8 20.5 18.2C20.1 20.2 18.8 22 18.5 24C18.2 26.2 19.6 28.5 22 29.8C23.5 30.6 22.8 32 21.1 31.5C17.8 30.5 15.8 27.6 16.2 24.3C16.5 22.1 17.5 20.2 17.6 18.2C17.7 16 17 13.8 15.9 11.8C15 11.1 14.3 9.9 14.3 8.5C14.3 6.6 16.2 5 18 5Z" fill="currentColor"/>
+            <path d="M15.5 13.5L10.5 11.5M20.5 13.5L25.5 11.5M16.2 19.5L11 21.5M19.8 19.5L25 21.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="16.8" cy="7.8" r="0.9" fill="#FAF8F5"/>
+            <circle cx="19.2" cy="7.8" r="0.9" fill="#FAF8F5"/>
+          </svg>
+        </div>
+        <div class="leading-tight">
+          <span class="block font-extrabold text-sm sm:text-base tracking-tight text-selva-900">ARTESANÍAS BOLIVIA</span>
+          <span class="block text-[11px] sm:text-xs text-terracota-600 font-medium">Santa Cruz • Hecho a mano</span>
+        </div>
+      </a>
+
+      <!-- Navegación Desktop -->
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-gray-700" aria-label="Navegación principal">
+        <a href="#catalogo" class="hover:text-selva-700 transition-colors py-2">Catálogo de Llaveros</a>
+        <a href="#regalos" class="hover:text-selva-700 transition-colors py-2">Packs Regalo</a>
+        <a href="#taller" class="hover:text-selva-700 transition-colors py-2">Nuestro Taller</a>
+        <a href="#preguntas" class="hover:text-selva-700 transition-colors py-2">Preguntas Frecuentes</a>
+      </nav>
+
+      <!-- Acciones Rápidas -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <!-- Botón Lista de Selección (Drawer) -->
+        <button 
+          type="button" 
+          onclick="toggleCartDrawer(true)" 
+          class="relative inline-flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl border border-arena-300 bg-arena-50 hover:bg-arena-100 text-selva-900 text-xs sm:text-sm font-semibold transition-colors min-h-[44px]"
+          aria-label="Ver mi lista de pedido">
+          <svg class="w-5 h-5 text-selva-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+          </svg>
+          <span class="hidden sm:inline">Mi Pedido</span>
+          <span id="cart-badge" class="inline-flex items-center justify-center min-w-[20px] h-5 px-1.5 text-xs font-bold rounded-full bg-terracota-500 text-white">0</span>
+        </button>
+
+        <!-- Botón Directo WhatsApp -->
+        <a 
+          href="https://wa.me/59178914551?text=Hola%20Artesan%C3%ADas%20Bolivia%2C%20visito%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20consultar%20sobre%20los%20llaveros%20artesanales%20de%20lagartijas."
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center gap-2 px-3.5 sm:px-4 py-2.5 rounded-xl bg-whatsapp-600 hover:bg-whatsapp-700 text-white text-xs sm:text-sm font-bold shadow-sm transition-all min-h-[44px]">
+          <svg class="w-4 h-4 sm:w-5 sm:h-5 fill-current shrink-0" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+          </svg>
+          <span>78914551</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================================================================== -->
+  <!-- SECCIÓN HERO (Propuesta Única de Valor + Método AIDA + Escala Visual)  -->
+  <!-- ===================================================================== -->
+  <section id="inicio" class="relative overflow-hidden pt-8 pb-12 sm:pt-14 sm:pb-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        
+        <!-- Columna Izquierda: Copywriting Persuasivo -->
+        <div class="lg:col-span-7 text-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-selva-700/10 text-selva-800 text-xs sm:text-sm font-semibold mb-5">
+            <span>🦎</span>
+            <span>Artesanía hecha a mano • Identidad Cruceña</span>
+          </div>
+
+          <h1 class="text-3xl sm:text-5xl lg:text-[52px] font-extrabold text-selva-900 tracking-tight leading-[1.12] mb-5">
+            Llaveros artesanales de lagartijas hechos a mano en Bolivia
+          </h1>
+
+          <p class="text-base sm:text-lg text-gray-700 leading-relaxed mb-7 max-w-2xl">
+            Piezas únicas elaboradas con dedicación artesanal en <strong>Santa Cruz de la Sierra</strong>. Lleva tus llaves con un accesorio original y durable, o sorprende a alguien especial con un regalo lleno de identidad boliviana.
+          </p>
+
+          <!-- Botones de Acción (Touch-friendly >= 48px) -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-8">
+            <a 
+              href="#catalogo" 
+              class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-2xl bg-selva-700 hover:bg-selva-800 text-white font-bold text-base shadow-soft transition-all text-center min-h-[52px]">
+              <span>Explorar Modelos Disponibles</span>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </a>
+
+            <a 
+              href="https://wa.me/59178914551?text=Hola%20Artesan%C3%ADas%20Bolivia%2C%20quisiera%20ver%20los%20modelos%20de%20llaveros%20de%20lagartijas%20disponibles%20hoy."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2.5 px-6 py-4 rounded-2xl bg-whatsapp-600 hover:bg-whatsapp-700 text-white font-bold text-base shadow-soft transition-all text-center min-h-[52px]">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+              </svg>
+              <span>Pedir directo por WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- Micro-prueba de confianza debajo del CTA (Principio CXL) -->
+          <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs sm:text-sm text-gray-600">
+            <span class="inline-flex items-center gap-1.5 font-medium">
+              <svg class="w-4 h-4 text-selva-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              Atención directa al 78914551
+            </span>
+            <span class="inline-flex items-center gap-1.5 font-medium">
+              <svg class="w-4 h-4 text-selva-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              Pago inmediato por QR Simple
+            </span>
+            <span class="inline-flex items-center gap-1.5 font-medium">
+              <svg class="w-4 h-4 text-selva-600" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              Listo para regalo
+            </span>
+          </div>
+        </div>
+
+        <!-- Columna Derecha: Showcase Interactivo del Producto Estrella (Baymard In-Scale UX) -->
+        <div class="lg:col-span-5">
+          <div class="bg-white rounded-3xl p-5 sm:p-6 border border-arena-200 shadow-soft relative">
+            <div class="flex items-center justify-between mb-3">
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-bold">
+                ★ Modelo Más Pedido
+              </span>
+              <span class="text-xs font-semibold text-gray-500">Escala real: ~8.5 cm</span>
+            </div>
+
+            <!-- Visor Visual Interactivo del Hero -->
+            <div id="hero-visual-stage" class="relative bg-arena-50 rounded-2xl h-64 sm:h-72 flex items-center justify-center overflow-hidden border border-arena-100 p-4">
+              <!-- Se renderiza dinámicamente por JS con las 3 vistas (Producto / En Mano / Detalle) -->
+            </div>
+
+            <!-- Selector de Vista (Resuelve incertidumbre de tamaño - Baymard 42%) -->
+            <div class="grid grid-cols-3 gap-2 mt-3" role="tablist" aria-label="Vistas del llavero estrella">
+              <button type="button" onclick="setHeroView('studio')" id="hero-tab-studio" class="hero-tab active py-2 px-2.5 rounded-xl text-xs font-semibold bg-selva-700 text-white transition-colors">
+                Vista Completa
+              </button>
+              <button type="button" onclick="setHeroView('scale')" id="hero-tab-scale" class="hero-tab py-2 px-2.5 rounded-xl text-xs font-semibold bg-arena-100 text-gray-700 hover:bg-arena-200 transition-colors">
+                Tamaño en Mano
+              </button>
+              <button type="button" onclick="setHeroView('detail')" id="hero-tab-detail" class="hero-tab py-2 px-2.5 rounded-xl text-xs font-semibold bg-arena-100 text-gray-700 hover:bg-arena-200 transition-colors">
+                Detalle Manual
+              </button>
+            </div>
+
+            <div class="mt-4 pt-4 border-t border-arena-100 flex items-center justify-between gap-3">
+              <div>
+                <p class="text-xs text-gray-500 font-medium">Llavero Lagartija Verde Selva</p>
+                <p class="text-lg font-extrabold text-selva-900">Bs. 35 <span class="text-xs font-normal text-gray-500">/ unidad</span></p>
+              </div>
+              <a 
+                href="https://wa.me/59178914551?text=Hola%20Artesan%C3%ADas%20Bolivia%2C%20me%20interesa%20el%20*Llavero%20Lagartija%20Verde%20Selva*%20(Bs.%2035).%20%C2%BFTienen%20disponibilidad%3F"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-whatsapp-600 hover:bg-whatsapp-700 text-white text-xs sm:text-sm font-bold transition-colors min-h-[44px]">
+                <span>Pedir este</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- BARRA DE CONFIANZA Y PROPUESTA DE VALOR (4 Pilares)                   -->
+  <!-- ===================================================================== -->
+  <section class="bg-white border-y border-arena-200 py-8">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="flex items-start gap-3.5">
+          <div class="w-11 h-11 rounded-2xl bg-selva-700/10 text-selva-700 flex items-center justify-center shrink-0 font-bold text-lg">
+            ✋
+          </div>
+          <div>
+            <h2 class="text-sm font-bold text-selva-900">100% Trabajo Artesanal</h2>
+            <p class="text-xs text-gray-600 mt-0.5 leading-relaxed">Cada lagartija es elaborada y acabada a mano en Bolivia; ninguna es una copia plástica industrial.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3.5">
+          <div class="w-11 h-11 rounded-2xl bg-terracota-500/10 text-terracota-600 flex items-center justify-center shrink-0 font-bold text-lg">
+            📱
+          </div>
+          <div>
+            <h2 class="text-sm font-bold text-selva-900">Pago Fácil con QR Simple</h2>
+            <p class="text-xs text-gray-600 mt-0.5 leading-relaxed">Paga al instante desde cualquier banco boliviano o coordina contra entrega en Santa Cruz.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3.5">
+          <div class="w-11 h-11 rounded-2xl bg-selva-700/10 text-selva-700 flex items-center justify-center shrink-0 font-bold text-lg">
+            🚚
+          </div>
+          <div>
+            <h2 class="text-sm font-bold text-selva-900">Envíos Locales y Nacionales</h2>
+            <p class="text-xs text-gray-600 mt-0.5 leading-relaxed">Entrega rápida por delivery en Santa Cruz de la Sierra y envíos a La Paz, Cochabamba y todo el país.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-3.5">
+          <div class="w-11 h-11 rounded-2xl bg-whatsapp-500/15 text-whatsapp-700 flex items-center justify-center shrink-0 font-bold text-lg">
+            🎁
+          </div>
+          <div>
+            <h2 class="text-sm font-bold text-selva-900">Ideal para Regalo o Recuerdo</h2>
+            <p class="text-xs text-gray-600 mt-0.5 leading-relaxed">Incluye presentación cuidada lista para obsequiar en cumpleaños, eventos o viajes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- CATÁLOGO VISUAL DE LLAVEROS DE LAGARTIJAS                             -->
+  <!-- ===================================================================== -->
+  <section id="catalogo" class="py-12 sm:py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <!-- Encabezado de Sección + Filtros -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-wider text-terracota-600">Colección Artesanal</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-selva-900 mt-1">Elige tu Llavero de Lagartija</h2>
+          <p class="text-sm text-gray-600 mt-1.5 max-w-xl">
+            Toca cualquier modelo para ver su tamaño real en mano y detalles, o pídelo directamente por WhatsApp en un clic.
+          </p>
+        </div>
+
+        <!-- Filtros táctiles horizontales -->
+        <div class="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1" role="group" aria-label="Filtrar modelos de llaveros">
+          <button type="button" onclick="filterProducts('todos')" data-filter="todos" class="filter-btn active px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-selva-700 text-white whitespace-nowrap transition-colors min-h-[42px]">
+            Todos (6)
+          </button>
+          <button type="button" onclick="filterProducts('natural')" data-filter="natural" class="filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-arena-200 text-gray-700 hover:bg-arena-100 whitespace-nowrap transition-colors min-h-[42px]">
+            Tonos Naturales
+          </button>
+          <button type="button" onclick="filterProducts('colorido')" data-filter="colorido" class="filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-arena-200 text-gray-700 hover:bg-arena-100 whitespace-nowrap transition-colors min-h-[42px]">
+            Coloridos Oriente
+          </button>
+          <button type="button" onclick="filterProducts('especial')" data-filter="especial" class="filter-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-arena-200 text-gray-700 hover:bg-arena-100 whitespace-nowrap transition-colors min-h-[42px]">
+            Edición Especial
+          </button>
+        </div>
+      </div>
+
+      <!-- Nota transparente sobre precios y personalización -->
+      <div class="mb-6 px-4 py-3 rounded-2xl bg-arena-100/80 border border-arena-200 flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-xs text-gray-700">
+        <span>💡 <strong>¿Buscas un color específico o varias unidades?</strong> Todos los modelos cuentan con argolla metálica resistente y medidas aprox. de <strong>8 a 9 cm</strong>.</span>
+        <span class="font-semibold text-selva-800 whitespace-nowrap">Descuentos desde 2 unidades</span>
+      </div>
+
+      <!-- Grid de Productos (2 columnas en móvil amplio/tablet, 3 en desktop; 1 en móviles muy estrechos) -->
+      <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Tarjetas generadas dinámicamente desde JS para mantener sincronía con el carrito y modal -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- PACKS PARA REGALO Y SOUVENIRS (Método PAS + Handmade Effect)          -->
+  <!-- ===================================================================== -->
+  <section id="regalos" class="py-12 sm:py-16 bg-white border-y border-arena-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <!-- Bloque Persuasivo PAS (Problema - Agitación - Solución) -->
+      <div class="max-w-3xl mx-auto text-center mb-12">
+        <span class="inline-block px-3 py-1 rounded-full bg-terracota-500/10 text-terracota-600 text-xs font-bold uppercase tracking-wider mb-3">
+          Regalos con Identidad Boliviana
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-selva-900 tracking-tight">
+          ¿Cansado de regalar recuerdos genéricos hechos en serie?
+        </h2>
+        <p class="text-sm sm:text-base text-gray-600 mt-4 leading-relaxed">
+          Los souvenirs industriales terminan olvidados en un cajón porque carecen de historia. Nuestros llaveros artesanales de lagartijas transmiten el valor real del trabajo hecho a mano en <strong>Santa Cruz de la Sierra</strong>: un detalle útil que acompaña todos los días a quien lo recibe.
+        </p>
+      </div>
+
+      <!-- Tarjetas de Packs (Bundles - Estrategia validada por Shopify / The Woobles) -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Pack 1: Dúo -->
+        <div class="rounded-3xl border border-arena-200 bg-arena-50 p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold uppercase tracking-wider text-selva-700 bg-selva-700/10 px-3 py-1 rounded-full">Para Compartir</span>
+              <span class="text-xs font-bold text-terracota-600">Ahorras Bs. 5</span>
+            </div>
+            <h3 class="text-xl font-extrabold text-selva-900">Pack Dúo (2 Lagartijas)</h3>
+            <p class="text-xs sm:text-sm text-gray-600 mt-2">
+              Elige 2 modelos distintos de nuestro catálogo: uno para tus llaves y otro listo para regalar.
+            </p>
+            <div class="my-5 pt-4 border-t border-arena-200">
+              <div class="flex items-baseline gap-2">
+                <span class="text-3xl font-extrabold text-selva-900">Bs. 65</span>
+                <span class="text-sm text-gray-400 line-through">Bs. 70</span>
+              </div>
+              <p class="text-xs text-gray-500 mt-1">Incluye 2 bolsitas de presentación artesanal</p>
+            </div>
+            <ul class="space-y-2 text-xs sm:text-sm text-gray-700 mb-6">
+              <li class="flex items-center gap-2">
+                <span class="text-selva-600 font-bold">✓</span> Combinación de colores a elección
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-selva-600 font-bold">✓</span> Tarjeta dedicatoria sin costo adicional
+              </li>
+            </ul>
+          </div>
+          <a 
+            href="https://wa.me/59178914551?text=Hola%20Artesan%C3%ADas%20Bolivia%2C%20quiero%20pedir%20el%20*Pack%20D%C3%BAo%20(2%20Llaveros%20de%20Lagartijas)*%20a%20Bs.%2065.%20%C2%BFQu%C3%A9%20colores%20tienen%20disponibles%3F"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-whatsapp-600 hover:bg-whatsapp-700 text-white font-bold text-sm transition-colors min-h-[48px]">
+            <span>Pedir Pack Dúo por WhatsApp</span>
+          </a>
+        </div>
+
+        <!-- Pack 2: Trío (Más Popular) -->
+        <div class="rounded-3xl border-2 border-selva-700 bg-white p-6 flex flex-col justify-between shadow-soft relative">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-selva-700 text-white text-xs font-bold px-4 py-1 rounded-full shadow-sm whitespace-nowrap">
+            ★ Más Elegido para Regalos
+          </div>
+          <div>
+            <div class="flex items-center justify-between mb-3 mt-1">
+              <span class="text-xs font-bold uppercase tracking-wider text-terracota-600 bg-terracota-500/10 px-3 py-1 rounded-full">Colección Trío</span>
+              <span class="text-xs font-bold text-selva-700">Ahorras Bs. 15</span>
+            </div>
+            <h3 class="text-xl font-extrabold text-selva-900">Pack Trío Cruceño (3 Lagartijas)</h3>
+            <p class="text-xs sm:text-sm text-gray-600 mt-2">
+              Ideal para obsequiar a familia, amigos del exterior o tener variedad para casa, auto y mochila.
+            </p>
+            <div class="my-5 pt-4 border-t border-arena-200">
+              <div class="flex items-baseline gap-2">
+                <span class="text-3xl font-extrabold text-selva-900">Bs. 90</span>
+                <span class="text-sm text-gray-400 line-through">Bs. 105</span>
+              </div>
+              <p class="text-xs text-gray-500 mt-1">Sale a solo Bs. 30 cada llavero artesanal</p>
+            </div>
+            <ul class="space-y-2 text-xs sm:text-sm text-gray-700 mb-6">
+              <li class="flex items-center gap-2">
+                <span class="text-selva-600 font-bold">✓</span> 3 modelos distintos hechos a mano
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-selva-600 font-bold">✓</span> Empaque individual listo para regalar
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-selva-600 font-bold">✓</span> Prioridad de despacho en Santa Cruz
+              </li>
+            </ul>
+          </div>
+          <a 
+            href="https://wa.me/59178914551?text=Hola%20Artesan%C3%ADas%20Bolivia%2C%20me%20interesa%20el%20*Pack%20Tr%C3%ADo%20Cruce%C3%B1o%20(3%20Llaveros%20de%20Lagartijas)*%20a%20Bs.%2090.%20Quisiera%20elegir%20los%20modelos."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-whatsapp-600 hover:bg-whatsapp-700 text-white font-bold text-sm shadow-sm transition-colors min-h-[48px]">
+            <span>Pedir Pack Trío por WhatsApp</span>
+          </a>
+        </div>
+
+        <!-- Pack 3: Eventos / Mayorista -->
+        <div class="rounded-3xl border border-arena-200 bg-arena-50 p-6 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-xs font-bold uppercase tracking-wider text-gray-700 bg-gray-200/80 px-3 py-1 rounded-full">Eventos & Empresas</span>
+              <span class="text-xs font-bold text-selva-700">Precio Especial</span>
+            </div>
+            <h3 class="text-xl font-extrabold text-selva-900">Pedidos por Mayor (10+ unid.)</h3>
+            <p class="text-xs sm:text-sm text-gray-600 mt-2">
+              Recuerdos para congresos en Santa Cruz, ferias, delegaciones internacionales o regalos empresariales.
+            </p>
+            <div class="my-5 pt-4 border-t border-arena-200">
+              <div class="flex items-baseline gap-2">
+                <span class="text-2xl font-extrabold text-selva-900">Cotización Directa</span>
+              </div>
+              <p class="text-xs text-gray-500 mt-1">Precios escalonados según cantidad y plazo</p>
+            </div>
+            <ul class="space-y-2 text-xs sm:text-sm text-gray-700 mb-6">
+              <li class="flex items-center gap-2">
+                <span class="text-selva-600 font-bold">✓</span> Producción bajo pedido en nuestro taller
+              </li>
+              <li class="flex items-center gap-2">
+                <span class="text-selva-600 font-bold">✓</span> Factura o recibo según requerimiento
+              </li>
+            </ul>
+          </div>
+          <a 
+            href="https://wa.me/59178914551?text=Hola%20Artesan%C3%ADas%20Bolivia%2C%20quisiera%20cotizar%20un%20*pedido%20al%20por%20mayor%20(10%20o%20m%C3%A1s%20llaveros%20de%20lagartijas)*%20para%20un%20evento%2Fregalo."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-selva-700 hover:bg-selva-800 text-white font-bold text-sm transition-colors min-h-[48px]">
+            <span>Cotizar por Mayor en WhatsApp</span>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- STORYTELLING DEL TALLER (Activación del Handmade Effect)              -->
+  <!-- ===================================================================== -->
+  <section id="taller" class="py-12 sm:py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="bg-selva-900 rounded-3xl p-6 sm:p-10 lg:p-12 text-arena-50 overflow-hidden relative">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7">
+            <span class="text-xs font-bold uppercase tracking-wider text-arena-300">Nuestro Oficio en Santa Cruz</span>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-2 leading-tight">
+              ¿Por qué elegir un llavero hecho a mano frente a uno industrial?
+            </h2>
+            <p class="text-sm sm:text-base text-arena-200 mt-4 leading-relaxed">
+              En <strong>ARTESANÍAS BOLIVIA</strong> creemos que los objetos cotidianos deben tener alma. La lagartija es parte viva del paisaje natural del oriente boliviano; transformarla en un llavero artesanal requiere paciencia, pulso y dedicación manual en cada etapa.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
+              <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/10">
+                <span class="text-xs font-extrabold text-whatsapp-500 uppercase">Paso 01</span>
+                <h3 class="text-sm font-bold text-white mt-1">Formado Manual</h3>
+                <p class="text-xs text-arena-200 mt-1">Damos forma articulada y balanceada para que sea cómodo en el bolsillo.</p>
+              </div>
+              <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/10">
+                <span class="text-xs font-extrabold text-whatsapp-500 uppercase">Paso 02</span>
+                <h3 class="text-sm font-bold text-white mt-1">Detalle y Color</h3>
+                <p class="text-xs text-arena-200 mt-1">Acabados realizados pieza por pieza, logrando variaciones únicas.</p>
+              </div>
+              <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/10">
+                <span class="text-xs font-extrabold text-whatsapp-500 uppercase">Paso 03</span>
+                <h3 class="text-sm font-bold text-white mt-1">Herraje Seguro</h3>
+                <p class="text-xs text-arena-200 mt-1">Verificamos cada argolla y sujeción antes de empacar tu pedido.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta de Garantía y Compromiso -->
+          <div class="lg:col-span-5">
+            <div class="bg-arena-50 text-gray-800 rounded-2xl p-6 shadow-lg">
+              <h3 class="text-lg font-extrabold text-selva-900">Compra Directa del Taller</h3>
+              <p class="text-xs sm:text-sm text-gray-600 mt-2 leading-relaxed">
+                Al escribirnos por WhatsApp hablas directamente con nosotros en <strong>Santa Cruz de la Sierra</strong>. Antes de enviar tu pedido, te mandamos una foto real de las piezas exactas que recibirás.
+              </p>
+              <div class="mt-5 p-4 rounded-xl bg-white border border-arena-200 space-y-2.5 text-xs">
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Ubicación:</span>
+                  <span class="font-bold text-selva-900">Santa Cruz de la Sierra, BO</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500">WhatsApp Directo:</span>
+                  <span class="font-bold text-selva-900">+591 78914551</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-gray-500">Medios de Pago:</span>
+                  <span class="font-bold text-selva-900">QR Simple / Transferencia / Efectivo</span>
+                </div>
+              </div>
+              <a 
+                href="https://wa.me/59178914551?text=Hola%20Artesan%C3%ADas%20Bolivia%2C%20me%20gustar%C3%ADa%20que%20me%20env%C3%ADen%20fotos%20de%20las%20lagartijas%20que%20tienen%20listas%20en%20taller%20hoy."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mt-5 w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-whatsapp-600 hover:bg-whatsapp-700 text-white font-bold text-sm transition-colors min-h-[48px]">
+                <span>Pedir fotos reales del stock de hoy</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- PRUEBA SOCIAL (Opiniones de Compradores en Bolivia)                   -->
+  <!-- ===================================================================== -->
+  <section class="py-12 bg-white border-t border-arena-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs font-bold uppercase tracking-wider text-terracota-600">Clientes Satisfechos</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-selva-900 mt-1">Lo que dicen quienes ya llevan su lagartija</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <article class="rounded-2xl bg-arena-50 border border-arena-200 p-5">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-500 text-sm tracking-tight" aria-label="5 de 5 estrellas">★★★★★</div>
+            <span class="text-[11px] font-semibold text-selva-700 bg-selva-700/10 px-2.5 py-0.5 rounded-full">Compra verificada</span>
+          </div>
+          <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+            «Pedí el Pack Trío para llevar recuerdos de Santa Cruz a unos amigos en La Paz. Me mandaron foto por WhatsApp antes del envío, pagué por QR y llegaron súper bien presentados.»
+          </p>
+          <div class="mt-4 pt-3 border-t border-arena-200 flex items-center justify-between text-xs">
+            <span class="font-bold text-selva-900">Valeria M.</span>
+            <span class="text-gray-500">Equipetrol, Santa Cruz</span>
+          </div>
+        </article>
+
+        <article class="rounded-2xl bg-arena-50 border border-arena-200 p-5">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-500 text-sm tracking-tight" aria-label="5 de 5 estrellas">★★★★★</div>
+            <span class="text-[11px] font-semibold text-selva-700 bg-selva-700/10 px-2.5 py-0.5 rounded-full">Compra verificada</span>
+          </div>
+          <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+            «Se nota al tacto que no es un llavero plástico barato. Tiene el tamaño justo para las llaves del auto y todo el mundo me pregunta dónde lo conseguí.»
+          </p>
+          <div class="mt-4 pt-3 border-t border-arena-200 flex items-center justify-between text-xs">
+            <span class="font-bold text-selva-900">Carlos R.</span>
+            <span class="text-gray-500">Zona Norte, Santa Cruz</span>
+          </div>
+        </article>
+
+        <article class="rounded-2xl bg-arena-50 border border-arena-200 p-5">
+          <div class="flex items-center justify-between mb-3">
+            <div class="text-amber-500 text-sm tracking-tight" aria-label="5 de 5 estrellas">★★★★★</div>
+            <span class="text-[11px] font-semibold text-selva-700 bg-selva-700/10 px-2.5 py-0.5 rounded-full">Compra verificada</span>
+          </div>
+          <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+            «Excelente atención al 78914551. Coordinamos la entrega en el día y me incluyeron una tarjetita de regalo sin costo. Súper recomendados para apoyar lo artesanal.»
+          </p>
+          <div class="mt-4 pt-3 border-t border-arena-200 flex items-center justify-between text-xs">
+            <span class="font-bold text-selva-900">Daniela T.</span>
+            <span class="text-gray-500">Urbarí, Santa Cruz</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- PREGUNTAS FRECUENTES (Reducción de Objeciones de Compra)              -->
+  <!-- ===================================================================== -->
+  <section id="preguntas" class="py-12 sm:py-16">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-8">
+        <span class="text-xs font-bold uppercase tracking-wider text-terracota-600">Resolvemos tus dudas</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-selva-900 mt-1">Preguntas Frecuentes</h2>
+      </div>
+
+      <div class="space-y-3" id="faq-accordion">
+        <div class="bg-white rounded-2xl border border-arena-200 overflow-hidden">
+          <button type="button" onclick="toggleFaq(0)" class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-selva-900 min-h-[52px]">
+            <span>1. ¿Cómo realizo mi pedido y cómo pago?</span>
+            <span class="faq-icon text-selva-700 text-xl font-normal transition-transform">+</span>
+          </button>
+          <div class="faq-content hidden px-5 pb-4 text-xs sm:text-sm text-gray-600 leading-relaxed border-t border-arena-100 pt-3">
+            Es muy sencillo: presiona cualquier botón de WhatsApp en esta página (o arma tu lista en «Mi Pedido»). Te confirmaremos disponibilidad inmediata por chat y podrás pagar mediante <strong>QR Simple interbancario</strong> o en efectivo contra entrega (según zona en Santa Cruz).
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-arena-200 overflow-hidden">
+          <button type="button" onclick="toggleFaq(1)" class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-selva-900 min-h-[52px]">
+            <span>2. ¿Hacen envíos dentro de Santa Cruz y a otros departamentos?</span>
+            <span class="faq-icon text-selva-700 text-xl font-normal transition-transform">+</span>
+          </button>
+          <div class="faq-content hidden px-5 pb-4 text-xs sm:text-sm text-gray-600 leading-relaxed border-t border-arena-100 pt-3">
+            Sí. En <strong>Santa Cruz de la Sierra</strong> realizamos entregas rápidas por moto-delivery (costo según anillo/zona) o punto de entrega coordinado. También realizamos envíos seguros a La Paz, Cochabamba, Tarija, Sucre y todo Bolivia.
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-arena-200 overflow-hidden">
+          <button type="button" onclick="toggleFaq(2)" class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-selva-900 min-h-[52px]">
+            <span>3. ¿Qué tamaño tienen los llaveros de lagartijas?</span>
+            <span class="faq-icon text-selva-700 text-xl font-normal transition-transform">+</span>
+          </button>
+          <div class="faq-content hidden px-5 pb-4 text-xs sm:text-sm text-gray-600 leading-relaxed border-t border-arena-100 pt-3">
+            Tienen un tamaño práctico y cómodo de aproximadamente <strong>8 a 9 cm de largo</strong> (sin contar la cadena y argolla metálica), ideales para llevar en el bolsillo, cartera o mochila sin estorbar. Puedes ver la referencia en mano en cada ficha de producto.
+          </div>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-arena-200 overflow-hidden">
+          <button type="button" onclick="toggleFaq(3)" class="w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-selva-900 min-h-[52px]">
+            <span>4. ¿Vienen listos para regalar?</span>
+            <span class="faq-icon text-selva-700 text-xl font-normal transition-transform">+</span>
+          </button>
+          <div class="faq-content hidden px-5 pb-4 text-xs sm:text-sm text-gray-600 leading-relaxed border-t border-arena-100 pt-3">
+            Sí, todos nuestros llaveros se entregan en presentación artesanal cuidada. Si es para un cumpleaños o recuerdo especial, avísanos por WhatsApp para incluir una tarjeta dedicatoria sin costo adicional.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- FOOTER CON DATOS VERIFICABLES                                         -->
+  <!-- ===================================================================== -->
+  <footer class="bg-selva-900 text-arena-200 pt-12 pb-24 sm:pb-12 border-t border-selva-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-selva-800">
+        <div>
+          <div class="flex items-center gap-2.5 text-white font-extrabold text-base">
+            <span class="text-xl">🦎</span>
+            <span>ARTESANÍAS BOLIVIA</span>
+          </div>
+          <p class="text-xs text-arena-300 mt-3 leading-relaxed max-w-sm">
+            Taller dedicado a la elaboración de llaveros artesanales con forma de lagartijas en Santa Cruz de la Sierra. Productos hechos a mano con identidad boliviana.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xs font-bold uppercase tracking-wider text-white mb-3">Contacto Directo</h3>
+          <ul class="space-y-2 text-xs text-arena-200">
+            <li>📍 Santa Cruz de la Sierra, Bolivia</li>
+            <li>📱 WhatsApp: <strong class="text-white">+591 78914551</strong></li>
+            <li>🕒 Atención: Lunes a Sábado de 09:00 a 20:00</li>
+          </ul>
+          <button 
+            type="button" 
+            onclick="copyPhoneNumber()" 
+            class="mt-3 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-selva-800 hover:bg-selva-700 text-xs font-semibold text-white border border-selva-700 transition-colors">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+            <span>Copiar número 78914551</span>
+          </button>
+        </div>
+
+        <div>
+          <h3 class="text-xs font-bold uppercase tracking-wider text-white mb-3">Accesos Rápidos</h3>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#catalogo" class="hover:text-white transition-colors">Catálogo de Lagartijas</a></li>
+            <li><a href="#regalos" class="hover:text-white transition-colors">Packs para Regalo y Eventos</a></li>
+            <li><a href="#taller" class="hover:text-white transition-colors">Proceso Artesanal</a></li>
+            <li>
+              <a href="https://wa.me/59178914551?text=Hola%20Artesan%C3%ADas%20Bolivia%2C%20quisiera%20hacer%20una%20consulta." target="_blank" rel="noopener noreferrer" class="text-whatsapp-500 font-bold hover:underline">
+                Escribir al WhatsApp →
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-arena-300">
+        <p>© 2026 ARTESANÍAS BOLIVIA • Santa Cruz de la Sierra, Bolivia.</p>
+        <p>Hecho a mano en Bolivia • Pagos con QR Simple</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- BOTÓN FLOTANTE DISCRETO DE WHATSAPP (Mobile & Desktop)                -->
+  <!-- ===================================================================== -->
+  <a 
+    href="https://wa.me/59178914551?text=Hola%20Artesan%C3%ADas%20Bolivia%2C%20quiero%20consultar%20por%20los%20llaveros%20de%20lagartijas."
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar a Artesanías Bolivia por WhatsApp"
+    class="fixed bottom-4 right-4 z-40 inline-flex items-center gap-2.5 px-4 py-3.5 rounded-full bg-whatsapp-600 hover:bg-whatsapp-700 text-white font-bold text-xs sm:text-sm shadow-xl transition-transform hover:scale-105">
+    <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+    </svg>
+    <span>Pedir por WhatsApp</span>
+  </a>
+
+  <!-- ===================================================================== -->
+  <!-- MODAL DE FICHA DE PRODUCTO DETALLADA (Baymard PDP Best Practices)     -->
+  <!-- ===================================================================== -->
+  <div id="product-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/60 backdrop-blur-xs p-3 sm:p-6 overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="bg-white rounded-3xl max-w-3xl w-full overflow-hidden shadow-2xl border border-arena-200 my-auto">
+      <div class="flex items-center justify-between px-5 py-4 border-b border-arena-200">
+        <span id="modal-badge" class="text-xs font-bold px-3 py-1 rounded-full bg-selva-700/10 text-selva-800">Edición Artesanal</span>
+        <button type="button" onclick="closeProductModal()" class="w-9 h-9 rounded-full bg-arena-100 hover:bg-arena-200 flex items-center justify-center text-gray-700 font-bold" aria-label="Cerrar ficha">
+          ✕
+        </button>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6 p-5 sm:p-6">
+        <!-- Galería Multi-vista -->
+        <div class="md:col-span-6">
+          <div id="modal-visual-stage" class="bg-arena-50 rounded-2xl h-60 sm:h-64 flex items-center justify-center p-4 border border-arena-200"></div>
+          <div class="grid grid-cols-3 gap-2 mt-3">
+            <button type="button" onclick="setModalView('studio')" id="modal-tab-studio" class="modal-tab py-2 px-2 rounded-xl text-xs font-semibold bg-selva-700 text-white">Producto</button>
+            <button type="button" onclick="setModalView('scale')" id="modal-tab-scale" class="modal-tab py-2 px-2 rounded-xl text-xs font-semibold bg-arena-100 text-gray-700">En Mano (cm)</button>
+            <button type="button" onclick="setModalView('gift')" id="modal-tab-gift" class="modal-tab py-2 px-2 rounded-xl text-xs font-semibold bg-arena-100 text-gray-700">Para Regalo</button>
+          </div>
+        </div>
+
+        <!-- Información Estructurada por Highlights (Baymard) -->
+        <div class="md:col-span-6 flex flex-col justify-between">
+          <div>
+            <h3 id="modal-title" class="text-xl sm:text-2xl font-extrabold text-selva-900"></h3>
+            <div class="flex items-baseline gap-2 mt-1.5">
+              <span id="modal-price" class="text-2xl font-extrabold text-terracota-600"></span>
+              <span class="text-xs text-gray-500">• Disponible hoy en Santa Cruz</span>
+            </div>
+            <p id="modal-desc" class="text-xs sm:text-sm text-gray-600 mt-3 leading-relaxed"></p>
+
+            <!-- Feature Highlights con Íconos -->
+            <div class="mt-4 space-y-2.5 bg-arena-50 p-3.5 rounded-2xl border border-arena-200 text-xs">
+              <div class="flex items-center gap-2.5">
+                <span class="text-base">📏</span>
+                <span><strong>Dimensiones:</strong> <span id="modal-size"></span></span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <span class="text-base">✋</span>
+                <span><strong>Acabado:</strong> <span id="modal-finish"></span></span>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <span class="text-base">🔗</span>
+                <span><strong>Herraje:</strong> Argolla metálica reforzada para llaves o mochila</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-5 space-y-2.5">
+            <a id="modal-wa-link" href="#" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-whatsapp-600 hover:bg-whatsapp-700 text-white font-bold text-sm shadow-sm transition-colors min-h-[48px]">
+              <span>Pedir este modelo por WhatsApp</span>
+            </a>
+            <button type="button" id="modal-add-btn" class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 rounded-2xl bg-arena-100 hover:bg-arena-200 text-selva-900 font-bold text-xs sm:text-sm transition-colors min-h-[44px]">
+              + Agregar a mi lista para combinar varios
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- DRAWER DESLIZABLE: MI LISTA DE PEDIDO PARA WHATSAPP                   -->
+  <!-- ===================================================================== -->
+  <div id="cart-drawer" class="fixed inset-0 z-50 hidden justify-end bg-black/50 backdrop-blur-xs" role="dialog" aria-modal="true" aria-label="Mi lista de pedido">
+    <div class="bg-white w-full max-w-md h-full flex flex-col justify-between shadow-2xl">
+      
+      <!-- Header Drawer -->
+      <div class="px-5 py-4 border-b border-arena-200 flex items-center justify-between">
+        <div>
+          <h3 class="text-base font-extrabold text-selva-900">Mi Selección de Llaveros</h3>
+          <p class="text-xs text-gray-500">Envía tu lista lista para confirmar por WhatsApp</p>
+        </div>
+        <button type="button" onclick="toggleCartDrawer(false)" class="w-9 h-9 rounded-full bg-arena-100 hover:bg-arena-200 flex items-center justify-center text-gray-700 font-bold" aria-label="Cerrar lista">
+          ✕
+        </button>
+      </div>
+
+      <!-- Lista de Items -->
+      <div id="cart-items-container" class="flex-1 overflow-y-auto p-5 space-y-3">
+        <!-- Renderizado dinámico -->
+      </div>
+
+      <!-- Opciones de Entrega y Cierre WhatsApp -->
+      <div class="p-5 border-t border-arena-200 bg-arena-50 space-y-3">
+        <div>
+          <label for="delivery-zone" class="block text-xs font-bold text-selva-900 mb-1">Modalidad de entrega preferida:</label>
+          <select id="delivery-zone" class="w-full rounded-xl border border-arena-300 bg-white px-3 py-2.5 text-xs sm:text-sm text-gray-800 focus:outline-none focus:border-selva-700">
+            <option value="Delivery en Santa Cruz de la Sierra">Delivery en Santa Cruz de la Sierra</option>
+            <option value="Punto de encuentro en Santa Cruz">Punto de encuentro en Santa Cruz</option>
+            <option value="Envío a otro departamento de Bolivia">Envío a otro departamento de Bolivia</option>
+          </select>
+        </div>
+
+        <label class="flex items-center gap-2 text-xs text-gray-700 cursor-pointer">
+          <input type="checkbox" id="gift-wrap-check" class="rounded text-selva-700 focus:ring-selva-700" checked />
+          <span>Incluir presentación para regalo sin costo</span>
+        </label>
+
+        <div class="flex items-center justify-between pt-2 border-t border-arena-200">
+          <span class="text-xs font-semibold text-gray-600">Total referencial:</span>
+          <span id="cart-total" class="text-xl font-extrabold text-selva-900">Bs. 0</span>
+        </div>
+
+        <button 
+          type="button" 
+          onclick="sendCartToWhatsApp()" 
+          class="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-2xl bg-whatsapp-600 hover:bg-whatsapp-700 text-white font-bold text-sm shadow-md transition-colors min-h-[50px]">
+          <span>Enviar pedido por WhatsApp (78914551)</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- LÓGICA DE INTERACCIÓN, ILUSTRACIÓN VECTORIAL Y CONVERSIÓN WHATSAPP    -->
+  <!-- ===================================================================== -->
+  <script>
+    // Catálogo de Llaveros Artesanales de Lagartijas
+    const PRODUCTS = [
+      {
+        id: 'lagartija-verde-selva',
+        name: 'Lagartija Verde Selva',
+        category: 'natural',
+        badge: 'Más Pedido',
+        price: 35,
+        size: '8.5 cm largo x 3.2 cm ancho',
+        finish: 'Tonos verdes naturales inspirados en la flora oriental',
+        shortDesc: 'Nuestro clásico cruceño. Combinación equilibrada de tonos selva con acabado artesanal resistente al uso diario.',
+        primaryColor: '#2D5A27',
+        secondaryColor: '#6BA353',
+        spotColor: '#D9E86C'
+      },
+      {
+        id: 'lagartija-terracota-chiquitana',
+        name: 'Lagartija Terracota Chiquitana',
+        category: 'natural',
+        badge: 'Identidad Local',
+        price: 35,
+        size: '8.5 cm largo x 3.2 cm ancho',
+        finish: 'Tonos tierra cálidos y detalles pintados a mano',
+        shortDesc: 'Inspirada en los colores cálidos de la tierra chiquitana. Ideal para quienes prefieren accesorios sobrios y elegantes.',
+        primaryColor: '#9E4B2D',
+        secondaryColor: '#D47A4A',
+        spotColor: '#F3D5A5'
+      },
+      {
+        id: 'lagartija-turquesa-pantanal',
+        name: 'Lagartija Turquesa Pantanal',
+        category: 'colorido',
+        badge: 'Ideal Regalo',
+        price: 35,
+        size: '8.5 cm largo x 3.2 cm ancho',
+        finish: 'Contraste turquesa vibrante con detalles manuales',
+        shortDesc: 'Un diseño llamativo que destaca al instante en cualquier juego de llaves, cartera o mochila.',
+        primaryColor: '#176B7A',
+        secondaryColor: '#3AA6B9',
+        spotColor: '#FFD166'
+      },
+      {
+        id: 'lagartija-dorado-oriente',
+        name: 'Lagartija Dorado del Oriente',
+        category: 'especial',
+        badge: 'Edición Especial',
+        price: 40,
+        size: '9.0 cm largo x 3.4 cm ancho',
+        finish: 'Acabado cálido ocre y detalles en relieve manual',
+        shortDesc: 'Pieza destacada por su luminosidad y detalle artesanal minucioso. Muy elegida como obsequio ejecutivo o recuerdo.',
+        primaryColor: '#B57B1C',
+        secondaryColor: '#E3A83B',
+        spotColor: '#FFF3D1'
+      },
+      {
+        id: 'lagartija-rojo-tajibo',
+        name: 'Lagartija Flor de Tajibo',
+        category: 'colorido',
+        badge: 'Colorido',
+        price: 35,
+        size: '8.5 cm largo x 3.2 cm ancho',
+        finish: 'Tonos rojizos y coral inspirados en la floración cruceña',
+        shortDesc: 'Vibrante y alegre, pensada para regalar en cumpleaños o llevar un pedazo del color de Santa Cruz contigo.',
+        primaryColor: '#A62C37',
+        secondaryColor: '#E05A66',
+        spotColor: '#FAD2D6'
+      },
+      {
+        id: 'lagartija-noche-amazonica',
+        name: 'Lagartija Noche Amazónica',
+        category: 'especial',
+        badge: 'Edición Limitada',
+        price: 40,
+        size: '9.0 cm largo x 3.4 cm ancho',
+        finish: 'Base oscura profunda con puntos luminosos hechos a mano',
+        shortDesc: 'Diseño de alto contraste que luce espectacular en llaves de vehículo o mochilas urbanas.',
+        primaryColor: '#1F2937',
+        secondaryColor: '#4B5563',
+        spotColor: '#34D399'
+      }
+    ];
+
+    const WHATSAPP_NUMBER = '59178914551';
+    let cart = [];
+    let currentModalProduct = null;
+
+    // Generador de Ilustración SVG Artesanal (Garantiza carga instantánea en redes móviles de Bolivia)
+    function renderLizardSVG(product, mode = 'studio') {
+      const { primaryColor, secondaryColor, spotColor, size } = product;
+
+      if (mode === 'scale') {
+        // Vista "In Scale" con mano humana estilizada y cota en cm (Responde al hallazgo de Baymard 42%)
+        return `
+          <svg viewBox="0 0 320 220" class="w-full h-full max-h-56" role="img" aria-label="Referencia de tamaño en mano de ${product.name}">
+            <!-- Palma de mano estilizada para referencia de proporción -->
+            <path d="M95 195 C80 165, 78 130, 88 100 C92 88, 102 88, 104 102 L106 125 L112 68 C114 55, 126 55, 127 69 L128 118 L136 58 C138 45, 150 46, 150 60 L149 118 L159 66 C161 54, 173 56, 172 69 L168 124 L184 96 C191 85, 202 92, 196 105 L178 152 C172 172, 165 186, 158 195 Z" fill="#F2D3B8" stroke="#D9B191" stroke-width="2"/>
+            <!-- Llavero sobre la palma -->
+            <g transform="translate(115, 78) rotate(-14)">
+              <circle cx="24" cy="8" r="9" fill="none" stroke="#9CA3AF" stroke-width="2.5"/>
+              <path d="M24 17 L24 26" stroke="#6B7280" stroke-width="2"/>
+              <path d="M24 26 C30 26, 34 32, 34 39 C34 44, 31 48, 28 51 C33 58, 35 68, 33 78 C31 86, 26 93, 25 101 C24 110, 30 119, 39 124 C44 127, 41 132, 35 130 C23 126, 16 115, 17 102 C18 93, 22 86, 22 78 C22 68, 20 59, 16 51 C13 48, 10 44, 10 39 C10 32, 18 26, 24 26 Z" fill="${primaryColor}"/>
+              <path d="M14 57 L2 49 M34 57 L46 49 M17 82 L4 90 M31 82 L44 90" stroke="${secondaryColor}" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="24" cy="48" r="2.2" fill="${spotColor}"/>
+              <circle cx="24" cy="60" r="2.5" fill="${spotColor}"/>
+              <circle cx="24" cy="72" r="2.2" fill="${spotColor}"/>
+            </g>
+            <!-- Línea de cota dimensional -->
+            <line x1="225" y1="65" x2="225" y2="175" stroke="#2D5A27" stroke-width="1.5" stroke-dasharray="4 3"/>
+            <line x1="219" y1="65" x2="231" y2="65" stroke="#2D5A27" stroke-width="1.5"/>
+            <line x1="219" y1="175" x2="231" y2="175" stroke="#2D5A27" stroke-width="1.5"/>
+            <rect x="233" y="106" width="76" height="28" rx="8" fill="#2D5A27"/>
+            <text x="271" y="124" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="700">~8.5 cm</text>
+          </svg>
+        `;
+      }
+
+      if (mode === 'detail' || mode === 'gift') {
+        const isGift = mode === 'gift';
+        return `
+          <svg viewBox="0 0 320 220" class="w-full h-full max-h-56" role="img" aria-label="${isGift ? 'Presentación para regalo' : 'Detalle artesanal'} de ${product.name}">
+            ${isGift ? `
+              <!-- Tarjeta artesanal de regalo -->
+              <rect x="65" y="24" width="190" height="172" rx="18" fill="#FFFFFF" stroke="#D4C5A3" stroke-width="2"/>
+              <path d="M65 56 L255 56" stroke="#E6DEC8" stroke-width="1.5"/>
+              <text x="160" y="44" text-anchor="middle" fill="#2D5A27" font-size="10" font-weight="800" letter-spacing="1.5">ARTESANÍAS BOLIVIA</text>
+              <text x="160" y="176" text-anchor="middle" fill="#9E4B2D" font-size="10" font-weight="700">Hecho a mano en Santa Cruz 🇧🇴</text>
+            ` : `
+              <!-- Lupa de detalle macro -->
+              <circle cx="160" cy="110" r="88" fill="#FFFFFF" stroke="#E6DEC8" stroke-width="2" stroke-dasharray="6 4"/>
+              <text x="160" y="208" text-anchor="middle" fill="#4B5563" font-size="10" font-weight="600">Detalle de acabado manual y argolla reforzada</text>
+            `}
+            <g transform="translate(132, 46) scale(1.15)">
+              <circle cx="24" cy="10" r="10" fill="none" stroke="#9CA3AF" stroke-width="3"/>
+              <path d="M24 20 L24 28" stroke="#6B7280" stroke-width="2.5"/>
+              <path d="M24 28 C31 28, 36 35, 36 43 C36 49, 32 54, 29 57 C34 65, 37 76, 34 88 C32 97, 27 105, 25 114 C24 124, 31 134, 41 140 C47 143, 43 149, 36 147 C23 142, 15 130, 16 115 C17 105, 22 97, 22 88 C22 76, 19 66, 15 57 C12 54, 8 49, 8 43 C8 35, 17 28, 24 28 Z" fill="${primaryColor}"/>
+              <path d="M13 64 L0 55 M35 64 L48 55 M16 92 L2 101 M32 92 L46 101" stroke="${secondaryColor}" stroke-width="4.5" stroke-linecap="round"/>
+              <circle cx="19" cy="39" r="2" fill="#FFFFFF"/>
+              <circle cx="29" cy="39" r="2" fill="#FFFFFF"/>
+              <circle cx="24" cy="54" r="2.6" fill="${spotColor}"/>
+              <circle cx="24" cy="67" r="3" fill="${spotColor}"/>
+              <circle cx="24" cy="80" r="2.6" fill="${spotColor}"/>
+              <circle cx="24" cy="93" r="2" fill="${spotColor}"/>
+            </g>
+          </svg>
+        `;
+      }
+
+      // Vista Principal (Studio sobre fondo neutro)
+      return `
+        <svg viewBox="0 0 320 220" class="w-full h-full max-h-56 animate-float-slow" role="img" aria-label="${product.name}">
+          <!-- Sombra suave de estudio -->
+          <ellipse cx="160" cy="196" rx="58" ry="9" fill="rgba(0,0,0,0.07)"/>
+          <g transform="translate(132, 18) scale(1.18)">
+            <!-- Argolla metálica -->
+            <circle cx="24" cy="11" r="10.5" fill="none" stroke="#9CA3AF" stroke-width="3.2"/>
+            <circle cx="24" cy="11" r="8.5" fill="none" stroke="#D1D5DB" stroke-width="1"/>
+            <path d="M24 21.5 L24 30" stroke="#6B7280" stroke-width="2.5" stroke-linecap="round"/>
+            <!-- Cuerpo de la lagartija artesanal -->
+            <path d="M24 30 C31 30, 36 37, 36 45 C36 51, 32 56, 29 59 C34 67, 37 78, 34 90 C32 99, 27 107, 25 116 C24 126, 31 136, 41 142 C47 145, 43 151, 36 149 C23 144, 15 132, 16 117 C17 107, 22 99, 22 90 C22 78, 19 68, 15 59 C12 56, 8 51, 8 45 C8 37, 17 30, 24 30 Z" fill="${primaryColor}"/>
+            <!-- Patas articuladas -->
+            <path d="M13 66 L0 57 M35 66 L48 57 M16 94 L2 103 M32 94 L46 103" stroke="${secondaryColor}" stroke-width="4.8" stroke-linecap="round"/>
+            <!-- Detalles pintados a mano -->
+            <circle cx="19" cy="41" r="2.1" fill="#FFFFFF"/>
+            <circle cx="29" cy="41" r="2.1" fill="#FFFFFF"/>
+            <circle cx="19" cy="41" r="1" fill="#111827"/>
+            <circle cx="29" cy="41" r="1" fill="#111827"/>
+            <circle cx="24" cy="56" r="2.8" fill="${spotColor}"/>
+            <circle cx="24" cy="69" r="3.2" fill="${spotColor}"/>
+            <circle cx="24" cy="82" r="2.8" fill="${spotColor}"/>
+            <circle cx="24" cy="95" r="2.1" fill="${spotColor}"/>
+          </g>
+        </svg>
+      `;
+    }
+
+    // Cambiar vista del producto estrella en Hero
+    function setHeroView(view) {
+      const stage = document.getElementById('hero-visual-stage');
+      stage.innerHTML = renderLizardSVG(PRODUCTS[0], view);
+      document.querySelectorAll('.hero-tab').forEach(btn => {
+        btn.classList.remove('bg-selva-700', 'text-white');
+        btn.classList.add('bg-arena-100', 'text-gray-700');
+      });
+      const activeBtn = document.getElementById(`hero-tab-${view}`);
+      if (activeBtn) {
+        activeBtn.classList.remove('bg-arena-100', 'text-gray-700');
+        activeBtn.classList.add('bg-selva-700', 'text-white');
+      }
+    }
+
+    // Construir enlace directo a WhatsApp para un modelo específico
+    function getProductWhatsAppUrl(product) {
+      const message = `Hola Artesanías Bolivia, me interesa el llavero artesanal *${product.name}* (Bs. ${product.price}). ¿Tienen disponibilidad hoy y cómo coordinamos la entrega?`;
+      return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+    }
+
+    // Renderizar catálogo de productos
+    function renderCatalog(filter = 'todos') {
+      const grid = document.getElementById('product-grid');
+      const filtered = filter === 'todos' ? PRODUCTS : PRODUCTS.filter(p => p.category === filter);
+
+      grid.innerHTML = filtered.map(product => `
+        <article class="bg-white rounded-3xl border border-arena-200 shadow-card hover:shadow-soft transition-all flex flex-col justify-between overflow-hidden group">
+          <div>
+            <!-- Área Visual Interactiva -->
+            <div class="relative bg-arena-50 p-4 h-56 flex items-center justify-center border-b border-arena-100 cursor-pointer" onclick="openProductModal('${product.id}')">
+              <span class="absolute top-3 left-3 px-2.5 py-1 rounded-full text-[11px] font-bold bg-white/95 text-selva-800 border border-arena-200 shadow-2xs">
+                ${product.badge}
+              </span>
+              <button type="button" onclick="event.stopPropagation(); openProductModal('${product.id}', 'scale')" class="absolute bottom-3 right-3 px-2.5 py-1 rounded-lg text-[11px] font-semibold bg-white/95 hover:bg-selva-700 hover:text-white text-gray-700 border border-arena-200 transition-colors">
+                📏 Ver en mano
+              </button>
+              ${renderLizardSVG(product, 'studio')}
+            </div>
+
+            <!-- Contenido de la Tarjeta -->
+            <div class="p-5">
+              <div class="flex items-start justify-between gap-2">
+                <h3 class="text-base sm:text-lg font-extrabold text-selva-900 group-hover:text-selva-700 transition-colors cursor-pointer" onclick="openProductModal('${product.id}')">
+                  ${product.name}
+                </h3>
+                <span class="text-base sm:text-lg font-extrabold text-terracota-600 shrink-0">Bs. ${product.price}</span>
+              </div>
+              <p class="text-xs text-gray-500 font-medium mt-0.5">${product.size} • Hecho a mano</p>
+              <p class="text-xs sm:text-sm text-gray-600 mt-2.5 leading-relaxed line-clamp-2">
+                ${product.shortDesc}
+              </p>
+            </div>
+          </div>
+
+          <!-- Botones de Acción (1 clic WhatsApp + Agregar a lista) -->
+          <div class="px-5 pb-5 pt-1 space-y-2">
+            <a 
+              href="${getProductWhatsAppUrl(product)}" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="w-full inline-flex items-center justify-center gap-2 px-4 py-3 rounded-xl bg-whatsapp-600 hover:bg-whatsapp-700 text-white font-bold text-xs sm:text-sm shadow-2xs transition-colors min-h-[46px]">
+              <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+              </svg>
+              <span>Pedir por WhatsApp</span>
+            </a>
+
+            <div class="grid grid-cols-2 gap-2">
+              <button 
+                type="button" 
+                onclick="openProductModal('${product.id}')"
+                class="py-2.5 px-3 rounded-xl border border-arena-200 hover:bg-arena-50 text-gray-700 font-semibold text-xs transition-colors min-h-[40px]">
+                Ver detalles
+              </button>
+              <button 
+                type="button" 
+                onclick="addToCart('${product.id}')"
+                class="py-2.5 px-3 rounded-xl bg-arena-100 hover:bg-arena-200 text-selva-900 font-semibold text-xs transition-colors min-h-[40px]">
+                + A mi lista
+              </button>
+            </div>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    // Filtrado de categorías
+    function filterProducts(category) {
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('bg-selva-700', 'text-white');
+        btn.classList.add('bg-white', 'text-gray-700', 'border', 'border-arena-200');
+      });
+      const active = document.querySelector(`.filter-btn[data-filter="${category}"]`);
+      if (active) {
+        active.classList.remove('bg-white', 'text-gray-700', 'border', 'border-arena-200');
+        active.classList.add('bg-selva-700', 'text-white');
+      }
+      renderCatalog(category);
+    }
+
+    // Modal de Ficha de Producto
+    function openProductModal(productId, initialView = 'studio') {
+      const product = PRODUCTS.find(p => p.id === productId);
+      if (!product) return;
+      currentModalProduct = product;
+
+      document.getElementById('modal-badge').textContent = product.badge;
+      document.getElementById('modal-title').textContent = product.name;
+      document.getElementById('modal-price').textContent = `Bs. ${product.price}`;
+      document.getElementById('modal-desc').textContent = product.shortDesc;
+      document.getElementById('modal-size').textContent = product.size;
+      document.getElementById('modal-finish').textContent = product.finish;
+      document.getElementById('modal-wa-link').href = getProductWhatsAppUrl(product);
+      document.getElementById('modal-add-btn').onclick = () => {
+        addToCart(product.id);
+        closeProductModal();
+      };
+
+      setModalView(initialView);
+      const modal = document.getElementById('product-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function setModalView(view) {
+      if (!currentModalProduct) return;
+      document.getElementById('modal-visual-stage').innerHTML = renderLizardSVG(currentModalProduct, view);
+      document.querySelectorAll('.modal-tab').forEach(btn => {
+        btn.classList.remove('bg-selva-700', 'text-white');
+        btn.classList.add('bg-arena-100', 'text-gray-700');
+      });
+      const activeTab = document.getElementById(`modal-tab-${view}`);
+      if (activeTab) {
+        activeTab.classList.remove('bg-arena-100', 'text-gray-700');
+        activeTab.classList.add('bg-selva-700', 'text-white');
+      }
+    }
+
+    function closeProductModal() {
+      const modal = document.getElementById('product-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // Sistema de Lista de Selección (Slide-out Drawer para combinar varios modelos)
+    function addToCart(productId) {
+      const existing = cart.find(item => item.id === productId);
+      if (existing) {
+        existing.qty += 1;
+      } else {
+        const product = PRODUCTS.find(p => p.id === productId);
+        if (product) cart.push({ ...product, qty: 1 });
+      }
+      updateCartUI();
+      showToast('Agregado a tu lista de pedido');
+    }
+
+    function updateQty(productId, delta) {
+      const idx = cart.findIndex(item => item.id === productId);
+      if (idx === -1) return;
+      cart[idx].qty += delta;
+      if (cart[idx].qty <= 0) {
+        cart.splice(idx, 1);
+      }
+      updateCartUI();
+    }
+
+    function updateCartUI() {
+      const totalItems = cart.reduce((acc, item) => acc + item.qty, 0);
+      document.getElementById('cart-badge').textContent = totalItems;
+
+      const container = document.getElementById('cart-items-container');
+      const totalEl = document.getElementById('cart-total');
+
+      if (cart.length === 0) {
+        container.innerHTML = `
+          <div class="text-center py-12 px-4">
+            <div class="text-4xl mb-3">🦎</div>
+            <p class="text-sm font-bold text-selva-900">Tu lista está vacía</p>
+            <p class="text-xs text-gray-500 mt-1">Agrega 1 o varios llaveros del catálogo para enviar tu pedido combinado por WhatsApp.</p>
+          </div>
+        `;
+        totalEl.textContent = 'Bs. 0';
+        return;
+      }
+
+      let subtotal = 0;
+      container.innerHTML = cart.map(item => {
+        subtotal += item.price * item.qty;
+        return `
+          <div class="flex items-center justify-between gap-3 p-3 rounded-2xl bg-arena-50 border border-arena-200">
+            <div>
+              <h4 class="text-xs sm:text-sm font-bold text-selva-900">${item.name}</h4>
+              <p class="text-xs text-terracota-600 font-semibold">Bs. ${item.price} c/u</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <button type="button" onclick="updateQty('${item.id}', -1)" class="w-8 h-8 rounded-lg bg-white border border-arena-300 font-bold text-gray-700 hover:bg-arena-100" aria-label="Disminuir cantidad">−</button>
+              <span class="w-6 text-center text-xs font-bold">${item.qty}</span>
+              <button type="button" onclick="updateQty('${item.id}', 1)" class="w-8 h-8 rounded-lg bg-white border border-arena-300 font-bold text-gray-700 hover:bg-arena-100" aria-label="Aumentar cantidad">+</button>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      totalEl.textContent = `Bs. ${subtotal}`;
+    }
+
+    function toggleCartDrawer(open) {
+      const drawer = document.getElementById('cart-drawer');
+      if (open) {
+        drawer.classList.remove('hidden');
+        drawer.classList.add('flex');
+      } else {
+        drawer.classList.add('hidden');
+        drawer.classList.remove('flex');
+      }
+    }
+
+    function sendCartToWhatsApp() {
+      if (cart.length === 0) {
+        showToast('Selecciona al menos un llavero primero');
+        return;
+      }
+      const zone = document.getElementById('delivery-zone').value;
+      const isGift = document.getElementById('gift-wrap-check').checked;
+      const lines = cart.map(item => `• ${item.qty}x ${item.name} (Bs. ${item.price * item.qty})`).join('\n');
+      const total = cart.reduce((acc, item) => acc + item.price * item.qty, 0);
+
+      const message = `Hola *Artesanías Bolivia*, quiero realizar el siguiente pedido desde su web:\n\n${lines}\n\n*Total estimado:* Bs. ${total}\n*Entrega:* ${zone}\n*Presentación regalo:* ${isGift ? 'Sí, por favor' : 'Estándar'}\n\n¿Me confirman disponibilidad y datos QR para coordinar?`;
+      
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+    }
+
+    // Acordeón FAQ
+    function toggleFaq(index) {
+      const items = document.querySelectorAll('#faq-accordion > div');
+      items.forEach((item, i) => {
+        const content = item.querySelector('.faq-content');
+        const icon = item.querySelector('.faq-icon');
+        if (i === index) {
+          const isHidden = content.classList.contains('hidden');
+          content.classList.toggle('hidden');
+          icon.textContent = isHidden ? '−' : '+';
+        } else {
+          content.classList.add('hidden');
+          icon.textContent = '+';
+        }
+      });
+    }
+
+    // Copiar número al portapapeles (Compatibilidad segura con execCommand)
+    function copyPhoneNumber() {
+      const tempInput = document.createElement('input');
+      tempInput.value = '78914551';
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      try {
+        document.execCommand('copy');
+        showToast('Número 78914551 copiado');
+      } catch (err) {
+        showToast('Número: 78914551');
+      }
+      document.body.removeChild(tempInput);
+    }
+
+    // Notificación Toast no intrusiva
+    function showToast(text) {
+      const container = document.getElementById('toast-container');
+      const toast = document.createElement('div');
+      toast.className = 'bg-selva-900 text-white text-xs font-semibold px-4 py-3 rounded-xl shadow-lg border border-selva-700 transition-all';
+      toast.textContent = `✓ ${text}`;
+      container.appendChild(toast);
+      setTimeout(() => {
+        toast.style.opacity = '0';
+        setTimeout(() => toast.remove(), 300);
+      }, 2400);
+    }
+
+    // Inicialización al cargar
+    window.addEventListener('DOMContentLoaded', () => {
+      setHeroView('studio');
+      renderCatalog('todos');
+      updateCartUI();
+    });
+  </script>
+</body>
+</html>
